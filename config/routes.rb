@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   end
 
   namespace :guide do
-   resources :bookings
+   resources :bookings, only: :index
   end
 
   # resources :users, only: [:] do

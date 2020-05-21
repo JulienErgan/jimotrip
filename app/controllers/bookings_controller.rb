@@ -7,6 +7,7 @@ class BookingsController < ApplicationController
     @guide = Guide.find(params[:guide_id])
     @booking = Booking.new(booking_params)
     @booking.guide = @guide
+    raise
     authorize @booking
     if @booking.save
       redirect_to bookings_path
