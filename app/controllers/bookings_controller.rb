@@ -4,6 +4,7 @@ class BookingsController < ApplicationController
   end
 
   def create
+    # @booking = Booking.new
     # @guide = Guide.find(params[:user_id])
     @booking = Booking.new(booking_params)
     # raise
