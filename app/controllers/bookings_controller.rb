@@ -24,5 +24,3 @@ class BookingsController < ApplicationController
     # pass status and user_id in permit()?
   end
 end
-
-# guide/bookings, reference to name spacing way
